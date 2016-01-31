@@ -275,9 +275,9 @@ GALLERY NEW
 
 #gallery {
   background-color: #14142c;
+  padding: 20px 0 6px 20px;
   top: 0;
   left: 0;
-  width: 100%;
 }
 
 .col-xs-6 {
