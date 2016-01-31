@@ -213,9 +213,18 @@ WATCH
   position: relative;
   padding-top: 5px;
   padding-bottom: 56.25%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .video-container iframe,
@@ -228,7 +237,10 @@ WATCH
 }
 
 #watch .btn {
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   background-image: none;
   border-radius: 2px;
   cursor: pointer;
@@ -265,7 +277,8 @@ WATCH
 #watch .btn-primary {
   border-color: #eeeeee;
   color: #eeeeee;
-  transition: color 0.1s ease 0s, background-color 0.15s ease 0s;
+  -webkit-transition: color 0.1s ease 0s, background-color 0.15s ease 0s;
+          transition: color 0.1s ease 0s, background-color 0.15s ease 0s;
 }
 
 
@@ -331,14 +344,17 @@ GALLERY NEW
 }
 
 .demo-gallery > ul > li a > img {
-  transition: transform 0.15s ease 0s;
-  transform: scale3d(1, 1, 1);
+  -webkit-transition: -webkit-transform 0.15s ease 0s;
+          transition: transform 0.15s ease 0s;
+  -webkit-transform: scale3d(1, 1, 1);
+          transform: scale3d(1, 1, 1);
   height: 100%;
   width: 100%;
 }
 
 .demo-gallery > ul > li a:hover > img {
-  transform: scale3d(1.1, 1.1, 1.1);
+  -webkit-transform: scale3d(1.1, 1.1, 1.1);
+          transform: scale3d(1.1, 1.1, 1.1);
 }
 
 .demo-gallery > ul > li a:hover .demo-gallery-poster > img {
@@ -353,7 +369,8 @@ GALLERY NEW
   position: absolute;
   right: 0;
   top: 0;
-  transition: background-color 0.15s ease 0s;
+  -webkit-transition: background-color 0.15s ease 0s;
+          transition: background-color 0.15s ease 0s;
 }
 
 .demo-gallery > ul > li a .demo-gallery-poster > img {
@@ -363,7 +380,8 @@ GALLERY NEW
   opacity: 0;
   position: absolute;
   top: 50%;
-  transition: opacity 0.3s ease 0s;
+  -webkit-transition: opacity 0.3s ease 0s;
+          transition: opacity 0.3s ease 0s;
 }
 
 .demo-gallery > ul > li a:hover .demo-gallery-poster {
@@ -372,14 +390,17 @@ GALLERY NEW
 }
 
 .demo-gallery .justified-gallery > a > img {
-  transition: transform 0.15s ease 0s;
-  transform: scale3d(1, 1, 1);
+  -webkit-transition: -webkit-transform 0.15s ease 0s;
+          transition: transform 0.15s ease 0s;
+  -webkit-transform: scale3d(1, 1, 1);
+          transform: scale3d(1, 1, 1);
   height: 100%;
   width: 100%;
 }
 
 .demo-gallery .justified-gallery > a:hover > img {
-  transform: scale3d(1.1, 1.1, 1.1);
+  -webkit-transform: scale3d(1.1, 1.1, 1.1);
+          transform: scale3d(1.1, 1.1, 1.1);
 }
 
 .demo-gallery .justified-gallery > a:hover .demo-gallery-poster > img {
@@ -394,7 +415,8 @@ GALLERY NEW
   position: absolute;
   right: 0;
   top: 0;
-  transition: background-color 0.15s ease 0s;
+  -webkit-transition: background-color 0.15s ease 0s;
+          transition: background-color 0.15s ease 0s;
 }
 
 .demo-gallery .justified-gallery > a .demo-gallery-poster > img {
@@ -404,7 +426,8 @@ GALLERY NEW
   opacity: 0;
   position: absolute;
   top: 50%;
-  transition: opacity 0.3s ease 0s;
+  -webkit-transition: opacity 0.3s ease 0s;
+          transition: opacity 0.3s ease 0s;
 }
 
 .demo-gallery .justified-gallery > a:hover .demo-gallery-poster {
@@ -484,7 +507,8 @@ News
 #news .btn-primary {
   border-color: #eeeeee;
   color: #eeeeee;
-  transition: color 0.1s ease 0s, background-color 0.15s ease 0s;
+  -webkit-transition: color 0.1s ease 0s, background-color 0.15s ease 0s;
+          transition: color 0.1s ease 0s, background-color 0.15s ease 0s;
 }
 
 
@@ -632,12 +656,10 @@ COLORS
 /* site body */
 body {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#14142c+0,1f67a5+50,14142c+100 */
-  background: #14142c; /* Old browsers */
-  background: -moz-linear-gradient(left,  #14142c 0%, #1f67a5 50%, #14142c 100%); /* FF3.6+ */
+  background: #14142c; /* Old browsers */ /* FF3.6+ */
   background: -webkit-gradient(linear, left top, right top, color-stop(0%,#14142c), color-stop(50%,#1f67a5), color-stop(100%,#14142c)); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(left,  #14142c 0%,#1f67a5 50%,#14142c 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(left,  #14142c 0%,#1f67a5 50%,#14142c 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(left,  #14142c 0%,#1f67a5 50%,#14142c 100%); /* IE10+ */
+  background: -webkit-linear-gradient(left,  #14142c 0%,#1f67a5 50%,#14142c 100%); /* Chrome10+,Safari5.1+ */ /* Opera 11.10+ */ /* IE10+ */
+  background: -webkit-linear-gradient(left, #14142c 0%, #1f67a5 50%, #14142c 100%);
   background: linear-gradient(to right,  #14142c 0%,#1f67a5 50%,#14142c 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#14142c', endColorstr='#14142c',GradientType=1 ); /* IE6-9 */
 }
@@ -650,6 +672,7 @@ nav {
 
 .navbar {
   background: #14142c;
+  background: -webkit-linear-gradient(left, #14142c 0%, #1f67a5 50%, #14142c 100%);
   background: linear-gradient(to right,  #14142c 0%,#1f67a5 50%,#14142c 100%);
 }
 
