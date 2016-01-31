@@ -545,8 +545,17 @@ Acts
 }
 
 .acts_container {
-  padding: 0 40px 100px 40px;
+  padding: 0 40px 100px;
 }
+
+.image-cropper {
+   width: 240px;
+   height: 240px;
+   position: relative;
+   overflow: hidden;
+   border-radius: 50%;
+   margin: 0 auto;
+ }
 
 
 /********************************
