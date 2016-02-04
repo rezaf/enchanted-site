@@ -444,6 +444,10 @@ Acts
    margin: 0 auto;
  }
 
+.thumbnail {
+  padding: 0;
+  border: 0;
+}
 
 /********************************
 Instruction
